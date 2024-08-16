@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exploring the Depths of Torah Wisdom">
+    <title>Torah Insights</title>
+    <style>
+        /* Basic CSS for layout and styling */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            color: #333;
+        }
+
+        header {
+            background-color: #3b5998;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+
+        header nav a:hover {
+            background-color: #2e4a86;
+        }
+
+        .hero {
+            background-image: url('your-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .hero .cta-button {
+            background-color: #ffc107;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #e0a800;
+        }
+
+        .featured-insights {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .insight {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: calc(33% - 20px);
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .insight:hover {
+            transform: translateY(-5px);
+        }
+
+        .insight h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .insight p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .insight a {
+            color: #3b5998;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #3b5998;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="insights.html">Insights</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Exploring the Depths of Torah Wisdom</h1>
+        <p>“Turn it and turn it, for everything is in it.”</p>
+        <a href="insights.html" class="cta-button">Explore Insights</a>
+    </section>
+
+    <!-- Featured Insights -->
+    <section class="featured-insights">
+        <div class="insight">
+            <h2>Parsha: Bereishit</h2>
+            <p>A deep dive into the creation narrative and its spiritual implications.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="insight">
+            <h2>Shabbat: A Day of Rest</h2>
+            <p>Understanding the significance of Shabbat and its impact on our lives.</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="insight">
+            <h2>Ethics: Pirkei Avot</h2>
+            <p>Insights from the sages on how to lead a life of virtue and wisdom.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Torah Insights. All rights reserved.</p>
+    </footer>
+
+<script>
+    // Smooth Scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
